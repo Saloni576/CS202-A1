@@ -1,8 +1,8 @@
-# Bubble sort and Quick sort
+"""Bubble sort and Quick sort"""
 import random
 
 def bubble_sort(arr):
-    # Bubble sort algorithm
+    """Bubble sort algorithm"""
     n = len(arr)
     for i in range(n):
         for j in range(n - i - 1):
@@ -11,7 +11,7 @@ def bubble_sort(arr):
     return arr
 
 def quick_sort(arr):
-    # Quick sort algorithm
+    """Quick sort algorithm"""
     if len(arr) <= 1:
         return arr
     pivot = arr[0]
@@ -20,7 +20,7 @@ def quick_sort(arr):
     return quick_sort(left) + [pivot] + quick_sort(right)
 
 def main():
-    # Lets try custom and random test cases
+    """Lets try custom and random test cases"""
     test_cases = [
         [5, 3, 8, 1, 2, 7],
         [10, 9, 8, 7, 6, 5, 4, 3, 2, 1],
